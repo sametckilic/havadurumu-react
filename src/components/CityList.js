@@ -8,7 +8,7 @@ function CityList(props) {
     <ul>
     {props.cities && props.cities.map(cities =>(
         
-        <button onClick={()=>props.getCity(cities.SEHIRSTUB)} key = {cities.ID} id={cities.ID}>
+        <button onClick={()=>props.getCity(cities.SEHIRSTUB,cities.SEHIRADI)} key = {cities.ID} id={cities.ID}>
             {cities.SEHIRADI}
         </button>
     )
