@@ -49,7 +49,6 @@ header {
 
 .title a:hover {
   color: #F5BF21;
-
 }
 
 .title a span {
@@ -188,11 +187,18 @@ header {
   }
   
   .mol-item{
+    color: white;
     display:flex;
     justify-content: center;
     align-items: center;
     width: 100px;
     margin: 1px 1px;
-    border-radius: 10%
+    border-radius: 10%;
+    transition: background-color 0.35s linear;
     
+    
+  }
+
+  .mol-item:hover{
+    background-color: #153652;
   }
