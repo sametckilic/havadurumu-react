@@ -1,14 +1,14 @@
 import React from 'react'
 
-function CityList(props) {
+function CityList({cities,getCity}) {
 
     
   return (
     <>
     <ul>
-    {props.cities && props.cities.map(cities =>(
+    {cities && cities.map(cities =>(
         
-        <button onClick={()=>props.getCity(cities.SEHIRSTUB,cities.SEHIRADI)} key = {cities.ID} id={cities.ID}>
+        <button onClick={()=>getCity(cities.SEHIRSTUB,cities.SEHIRADI)} key = {cities.ID} id={cities.ID}>
             {cities.SEHIRADI}
         </button>
     )

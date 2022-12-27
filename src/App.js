@@ -3,7 +3,7 @@ import SearchBar from './components/SearchBar.js';
 import City from './components/City.js';
 import CityList from './components/CityList.js';
 import MapOrList from './components/MapOrList.js';
-import Map from './components/Map.js';
+import Map from './components/Map/Map.js';
 import { useEffect,useState,useCallback } from 'react'
 
 
@@ -51,7 +51,7 @@ function App() {
       <MapOrList mapOrList = {mapOrList} setMapOrList = {setMapOrList}/>
     </header>
     {mapOrList ? 
-    <Map/>:
+    <Map getCity = {getCity}/>:
     <CityList cities = {cities} getCity = {getCity} /> }
     </>
   );
