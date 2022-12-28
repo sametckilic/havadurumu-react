@@ -32,7 +32,6 @@ export default function Footer() {
       <li className="menu__item"><a className="menu__link" href="#">Contact</a></li>
 
     </ul>
-    <p>&copy;2021 Nadine Coelho | All Rights Reserved</p>
   </footer>
         </>
     )
