@@ -4,6 +4,7 @@ import City from './components/City.js';
 import CityList from './components/CityList.js';
 import MapOrList from './components/MapOrList.js';
 import Map from './components/Map/Map.js';
+import Footer from './components/Footer.js';
 import { useEffect,useState,useCallback } from 'react'
 
 
@@ -40,7 +41,7 @@ function App() {
     setLoading(false);
   },[]);
 
-  const [mapOrList, setMapOrList] = useState(true);
+  const [mapOrList, setMapOrList] = useState(false);
 
   return (
     <>
@@ -53,6 +54,7 @@ function App() {
     {mapOrList ? 
     <Map getCity = {getCity}/>:
     <CityList cities = {cities} getCity = {getCity} /> }
+    <Footer/>
     </>
   );
 }

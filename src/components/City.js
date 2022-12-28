@@ -29,7 +29,7 @@ function City({loading, city}) {
                             </span>
                         </div>
                         <div className="city-degree">
-                            {"Bir şehir arayın veya haritadan seçin."=== city.value ? city.value : city.value + " °C"}
+                            {"Bir şehir arayın veya haritadan seçin."=== city.value || "Bu şehir veritabanımızda bulunmamaktadır." === city.value ? city.value : city.value + " °C"}
                         </div>
                     </>
                 )}

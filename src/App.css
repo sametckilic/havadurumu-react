@@ -4,6 +4,7 @@
 
 html {
     font-family: 'Poppins', sans-serif;
+    
 }
 
 * {
@@ -12,6 +13,16 @@ html {
 
 a {
     text-decoration: none;
+    
+}
+ul {
+  list-style: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+  display: flex;
+    flex-wrap: wrap;
 }
 header {
   background-image: linear-gradient(0deg, #153652 0%, #00B4DB 100%);
@@ -195,10 +206,170 @@ header {
     margin: 1px 1px;
     border-radius: 10%;
     transition: background-color 0.35s linear;
-    
+    cursor: pointer;
     
   }
 
   .mol-item:hover{
     background-color: #153652;
   }
+
+  .cityList{
+    width: 1040px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    
+    
+
+  }
+  .cityButton{
+    margin: 35px 30px;
+    width: 200px;
+    height: 80px;
+    color: white;
+    background-color: #153652;
+    border: none;
+    font-size: 25px;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: background-color 1s linear;
+    
+
+  }
+
+  .cityButton span{
+
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 4.5px solid white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    
+  }
+
+  .cityButton:hover{
+    background-color: #1094F6; 
+  }
+
+
+.footer {
+  margin-top: 200px;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(0deg, #153652 0%, #00B4DB 100%);
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.hizliresim.com/3rkptsy.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
